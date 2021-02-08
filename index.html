@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>The Frontend Zone</title>
+</head>
+<body>
+    <header>
+         <!-- Nav list -->
+        <ul>
+            <li><button onclick="lightMode()">Toggle Light Mode</button></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <section class="title-section">
+            <img src="logos/raptor_emblem.png" alt="Raptor Logo" width="128" height="128">
+            <h1>
+                Patrik Jarnesand
+                <br>
+                <span>Frontend Developer</span>
+            </h1>
+        </section>
+    </header>
+
+    <main>
+        <section class="about-me" id="about">
+            <h2>About Me</h2>
+            <p>I am currently studying Frontend Development at <a href="https://www.jensenyh.se/vara-utbildningar/frontendutvecklare-webbsakerhet">Jensen's Yrkeshögskola</a>, with special focus on web security.
+                I create games as a hobby, and I have a passion for coding in general.</p>
+        </section>
+        <section class="project-section" id="projects">
+            <h2>Projects</h2>
+            <section class="video-control">
+                <iframe
+                src="https://www.youtube-nocookie.com/embed/fsV-4O9Ev3Q"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </section>
+        </section>
+        <section class="skills-section" id="skills">
+            <img src="logos/HTML5_Badge_128.png" alt="HTML Logo" width="128" height="128">
+            <img src="logos/CSS3_Badge_128.png" alt="CSS Logo" width="128" height="128">
+            <img src="logos/JS_Badge_128.png" alt="JS Logo" width="128" height="128">
+        </section>
+    </main>
+
+    <footer>
+        <!-- Contact form -->
+        <form id="contact">
+            <section>
+                <h3>Contact Me</h3>
+                <article class="form-control">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe"
+                    required>
+                </article>
+                <article class="form-control">
+                    <label for="tel_number">Phone Number (Required)</label>
+                    <input type="number" name="telephone" id="tel_number" placeholder="+46 777 777 777"
+                    required>
+                </article>
+                <article class="form-control">
+                    <label for="email">Email (Required)</label>
+                    <input type="email" name="email" id="email" placeholder="email@email.com"
+                    required>
+                </article>
+                <article class="form-control">
+                    <label for="company">Company</label>
+                    <input type="company" name="company" id="company" placeholder="Frontend Inc.">
+                </article>
+                <article class="form-control">
+                    <label for="checkbox" class="inline">Business related?</label>
+                    <input type="checkbox" name="job" id="offer">
+                </article>
+                <button type="submit" class="btn">Send</button>
+            </section>
+        </form>
+    </footer>
+
+    <script>
+        function lightMode() {
+           var element = document.body;
+           element.classList.toggle("light-mode");
+        }
+    </script>
+</body>
+</html>
