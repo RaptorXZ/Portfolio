@@ -40,11 +40,19 @@
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </section>
+            <section class="video-container">
+                <section class="video-control">
+                    <iframe
+                    src="https://www.youtube-nocookie.com/embed/fsV-4O9Ev3Q"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </section>
+            </section>
         </section>
         <section class="skills-section" id="skills">
-            <img src="logos/HTML5_Badge_128.png" alt="HTML Logo" width="128" height="128">
-            <img src="logos/CSS3_Badge_128.png" alt="CSS Logo" width="128" height="128">
-            <img src="logos/JS_Badge_128.png" alt="JS Logo" width="128" height="128">
+            <figure><img src="logos/Badge_HTML5.svg" alt="HTML Logo" width="128" height="128"><figcaption>HTML</figcaption></figure>
+            <figure><img src="logos/Badge_CSS3.svg" alt="CSS Logo" width="128" height="128"><figcaption>CSS</figcaption></figure>
+            <figure><img src="logos/Badge_JS.svg" alt="CSS Logo" width="128" height="128"><figcaption>JS</figcaption></figure>
         </section>
     </main>
 
@@ -59,9 +67,8 @@
                     required>
                 </article>
                 <article class="form-control">
-                    <label for="tel_number">Phone Number (Required)</label>
-                    <input type="number" name="telephone" id="tel_number" placeholder="+46 777 777 777"
-                    required>
+                    <label for="tel_number">Phone Number</label>
+                    <input type="number" name="telephone" id="tel_number" placeholder="+46 777 777 777">
                 </article>
                 <article class="form-control">
                     <label for="email">Email (Required)</label>
@@ -73,7 +80,7 @@
                     <input type="company" name="company" id="company" placeholder="Frontend Inc.">
                 </article>
                 <article class="form-control">
-                    <textarea name="message" form="contact" rows="6" cols="24">Enter message here...</textarea>
+                    <textarea name="message" form="contact" rows="6" cols="24" placeholder="Enter message here..."></textarea>
                 </article>
                 <article class="form-control">
                     <label for="checkbox" class="inline">Business related?</label>
@@ -82,6 +89,9 @@
                 <button type="submit" class="btn">Send</button>
             </section>
         </form>
+        <section class="bottom-section">
+            <p>&copy; Patrik Jarnesand, 2021</p>
+        </section>
     </footer>
 
     <script>

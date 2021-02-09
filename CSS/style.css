@@ -68,6 +68,8 @@ main .project-section {
     width: 100%;
 }
 
+
+
 main .skills-section {
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
@@ -81,6 +83,37 @@ main .skills-section * {
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+main .skills-section figcaption {
+    position: absolute;
+    filter: opacity(0%);
+    font-size: 2rem;
+    color: rgb(201, 89, 89);
+}
+
+main .skills-section :nth-child(1):hover {
+    filter: blur(4px);
+}
+
+main .skills-section :nth-child(1):hover figcaption {
+    filter: opacity(100%);
+}
+
+main .skills-section :nth-child(2):hover {
+    filter: blur(4px);
+}
+
+main .skills-section :nth-child(2):hover figcaption {
+    filter: opacity(100%);
+}
+
+main .skills-section :nth-child(3):hover {
+    filter: blur(4px);
+}
+
+main .skills-section :nth-child(3):hover figcaption {
+    filter: opacity(100%);
 }
 
 main h2 {
@@ -143,10 +176,21 @@ form .btn {
     margin: 1rem;
 }
 
+.bottom-section {
+    border-top: 2px solid rgb(201, 89, 89);
+}
+
+.bottom-section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(25px 25px 25px rgb(89, 160, 201));
+}
+
 @keyframes slide {
     0%   {left:-6000px;}
     100% {left:0px;}
-  }
+}
 
 @media screen and (min-width: 640px) {
     main .project-section {
