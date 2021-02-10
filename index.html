@@ -11,7 +11,7 @@
     <header>
          <!-- Nav list -->
         <ul>
-            <li><button onclick="lightMode()">Toggle Light Mode</button></li>
+            <li><button id="lightmodebutton" onclick="lightMode()">Toggle Light Mode</button></li>
             <li><a href="index.html#projects">Projects</a></li>
             <li><a href="index.html#skills">Skills</a></li>
             <li><a href="index.html#contact">Contact</a></li>
@@ -102,6 +102,13 @@
         function lightMode() {
            var element = document.body;
            element.classList.toggle("light-mode");
+
+           var x = document.getElementById("lightmodebutton");
+            if (x.innerHTML === "Toggle Light Mode") {
+            x.innerHTML = "Toggle Dark Mode";
+            } else {
+            x.innerHTML = "Toggle Light Mode";
+            }
         }
     </script>
 </body>
