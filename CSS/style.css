@@ -68,17 +68,17 @@ main .project-section {
     width: 100%;
 }
 
-
-
 main .skills-section {
     display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
     width: 100%;
+    row-gap: 2rem;
 }
 
-main .skills-section * {
+main .skills-section .skill-container figure {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,31 +88,15 @@ main .skills-section * {
 main .skills-section figcaption {
     position: absolute;
     filter: opacity(0%);
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: rgb(201, 89, 89);
 }
 
-main .skills-section :nth-child(1):hover {
+main .skills-section .skill-container:hover img {
     filter: blur(4px);
 }
 
 main .skills-section :nth-child(1):hover figcaption {
-    filter: opacity(100%);
-}
-
-main .skills-section :nth-child(2):hover {
-    filter: blur(4px);
-}
-
-main .skills-section :nth-child(2):hover figcaption {
-    filter: opacity(100%);
-}
-
-main .skills-section :nth-child(3):hover {
-    filter: blur(4px);
-}
-
-main .skills-section :nth-child(3):hover figcaption {
     filter: opacity(100%);
 }
 
@@ -122,6 +106,12 @@ main h2 {
     align-items: center;
     flex-direction: column;
     border-bottom: 2px solid rgb(201, 89, 89);
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    overflow: scroll;
 }
 
 .video-control {
@@ -213,11 +203,13 @@ form .btn {
     header .title-section img {
         margin-right: 5rem;
     }
+}
 
+@media screen and (min-width: 380px) {
     main .skills-section {
-        grid-template-columns: repeat(7, 1fr)
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
     }
-
     main .skills-section :nth-child(1) {
         grid-column-start: 3;
         grid-column-end: 4;
