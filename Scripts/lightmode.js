@@ -8,6 +8,9 @@ function lightMode() {
     var button2 = document.getElementById("gototop");
     button2.classList.toggle("dark-button");
 
+    var button3 = document.getElementById("github-logo");
+    button3.classList.toggle("dark-button");
+
     var x = document.getElementById("lightmodecaption");
     if (x.innerHTML === "Toggle Light Mode") {
      x.innerHTML = "Toggle Dark Mode";
